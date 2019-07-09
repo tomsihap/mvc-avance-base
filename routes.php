@@ -4,10 +4,10 @@
 $router = new Router();
 
 
-$router->get('', 'PagesController@home' );
-$router->get('list-examples', 'ExamplesController@index');
-$router->get('add-example', 'ExamplesController@add');
-$router->post('add-example', 'ExamplesController@save');
+$router->get('',                'PagesController@home' );
+$router->get('examples',        'ExamplesController@list');
+$router->get('examples/add',    'ExamplesController@add');
+$router->post('examples/add',   'ExamplesController@save');
 
 // Run it!
 $router->run();

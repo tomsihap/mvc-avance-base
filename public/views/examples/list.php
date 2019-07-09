@@ -7,8 +7,6 @@
         <td><?= $example['field1'] ?></td>
         <td><?= $example['field2'] ?></td>
         <td><?= $example['field3'] ?></td>
-        <td><?= $example['field4'] ?></td>
-        <td><img src="uploads/<?= $example['photo'] ?>" height="100"></td>
     </tr>
 
 <?php endforeach; ?>

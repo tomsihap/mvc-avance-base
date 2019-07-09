@@ -4,11 +4,11 @@
 class ExamplesController {
 
 
-    public function index() {
+    public function list() {
 
         $examples = Example::findAll();
 
-        view('examples.index');
+        view('examples.list', compact('examples'));
     }
 
     public function add() {
@@ -18,14 +18,11 @@ class ExamplesController {
 
     public function save() {
 
-        $flight = new Example;
-        $flight->setField1($_POST['field1']);
-        $flight->setField2($_POST['field2']);
-        $flight->setField3($_POST['field3']);
-        $flight->setField4($_POST['date'], $_POST['time']);
-        $flight->setPhoto($_FILES['photo']);
-
-        $flight->save();
+        $example = new Example;
+        $example->setField1($_POST['field1']);
+        $example->setField2($_POST['field2']);
+        $example->setField3($_POST['field3']);
+        $example->save();
 
     }
 

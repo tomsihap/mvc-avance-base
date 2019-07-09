@@ -4,8 +4,6 @@
     <input class="form-control" type="text" name="field1" id="">
     <input class="form-control" type="text" name="field2" id="">
     <input class="form-control" type="text" name="field3" id="">
-    <input class="form-control" type="date" name="field4" id="">
-    <input class="form-control" type="file" name="photo" id="">
     <input type="submit" value="Envoyer">
 </form>
 
